@@ -16,13 +16,5 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="titleColor">#1F75FE</color>
-    <color name="titleColorAlpha">#551F75FE</color>
-    <color name="greyAlpha">#55999999</color>
-    <color name="separatorBackground">#AAAAAA</color>
-    <color name="separatorText">#FFFFFF</color>
-    <color name="tile_stroke">#000000</color>
+    <dimen name="article_list_spacing">8dp</dimen>
 </resources>

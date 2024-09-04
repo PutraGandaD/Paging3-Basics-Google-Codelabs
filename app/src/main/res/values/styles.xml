@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright (C) 2018 The Android Open Source Project
   ~
@@ -16,13 +15,13 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="titleColor">#1F75FE</color>
-    <color name="titleColorAlpha">#551F75FE</color>
-    <color name="greyAlpha">#55999999</color>
-    <color name="separatorBackground">#AAAAAA</color>
-    <color name="separatorText">#FFFFFF</color>
-    <color name="tile_stroke">#000000</color>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>
