@@ -2,12 +2,14 @@ package com.example.android.codelabs.paging.data
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import kotlinx.coroutines.delay
 import java.time.LocalDateTime
 import kotlin.math.max
 
 
 private val STARTING_KEY = 0
 private val firstArticleCreatedTime = LocalDateTime.now()
+private const val LOAD_DELAY_MILLIS = 3_000L
 
 class ArticlePagingSource: PagingSource<Int, Article>() {
     // The refresh key is used for the initial load of the next PagingSource, after invalidation
@@ -25,6 +27,7 @@ class ArticlePagingSource: PagingSource<Int, Article>() {
         // Load as many items as hinted by params.loadSize
         val range = start.until(start + params.loadSize)
 
+        if(start != STARTING_KEY) delay(LOAD_DELAY_MILLIS)
         return LoadResult.Page(
             data = range.map { number ->
                 Article(
